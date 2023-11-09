@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,haskell,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,haskell,visualstudio
 
+.vscode
+
 ### Haskell ###
 dist
 dist-*
