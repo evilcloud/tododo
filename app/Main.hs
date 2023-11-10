@@ -1,11 +1,14 @@
 module Main where
 
+import Commands.Completion qualified as Completion
+import Commands.New qualified as New
 import Parse.Format qualified as Format
-import Task.Constructor qualified as Constructor
 
 main :: IO ()
 main = do
-  task <- Constructor.newTask "Hello World" Nothing
+  task <- New.createTask "Hello World" Nothing
   putStrLn $ show task
   putStrLn $ Format.forDisplay task
   putStrLn $ Format.forFile task
+  let task2 = Completion.completeTask task
+  putStrLn $ Format.forDisplay task2

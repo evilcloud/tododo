@@ -71,6 +71,8 @@ executable tododo
     build-depends:    base ^>=4.17.0.0
                     , time
                     , random
+                    , directory
+                    , filepath
 
     -- Directories containing source files.
     hs-source-dirs:   app
